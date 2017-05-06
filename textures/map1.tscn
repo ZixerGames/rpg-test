@@ -1,0 +1,143 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://houses/thouse16.scn" type="PackedScene" id=1]
+[ext_resource path="res://terrain/terrain1.scn" type="PackedScene" id=2]
+[ext_resource path="res://houses/plane.scn" type="PackedScene" id=3]
+[ext_resource path="res://houses/thouse10.scn" type="PackedScene" id=4]
+
+[node name="map1" type="Spatial"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="area1" type="Spatial" parent="."]
+
+editor/display_folded = true
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.0583, 0, 51.0847 )
+
+[node name="houses" type="Spatial" parent="area1"]
+
+editor/display_folded = true
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="thouse16" parent="area1/houses" instance=ExtResource( 1 )]
+
+transform/local = Transform( 0.0180369, 0, 0.999837, 0, 1, 0, -0.999837, 0, 0.0180369, -26.6105, 0, -3.74173 )
+
+[node name="thouse17" parent="area1/houses" instance=ExtResource( 1 )]
+
+transform/local = Transform( 0.0180369, 0, 0.999837, 0, 1, 0, -0.999837, 0, 0.0180369, -42.5285, 0, -3.16477 )
+
+[node name="thouse18" parent="area1/houses" instance=ExtResource( 1 )]
+
+transform/local = Transform( 0.999976, 0, -0.00687475, 0, 1, 0, 0.00687475, 0, 0.999976, -42.3066, 0, -16.8276 )
+
+[node name="thouse19" parent="area1/houses" instance=ExtResource( 1 )]
+
+transform/local = Transform( 0.0456453, 0, -0.998958, 0, 1, 0, 0.998958, 0, 0.0456453, -28.6359, 0, -15.3582 )
+
+[node name="terrain" type="Spatial" parent="area1"]
+
+editor/display_folded = true
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="terrain1" parent="area1/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.1203, 0, -8.37572 )
+
+[node name="planes" type="Spatial" parent="."]
+
+editor/display_folded = true
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0 )
+
+[node name="plane" parent="planes" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.2353, 0, 50.7146 )
+
+[node name="plane2" parent="planes" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.2353, 0, 33.6601 )
+
+[node name="plane3" parent="planes" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -73.6035, 0, 33.6601 )
+
+[node name="plane1" parent="planes" instance=ExtResource( 3 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72.7059, 0, 50.2658 )
+
+[node name="area2" type="Spatial" parent="."]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="houses" type="Spatial" parent="area2"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="thouse10" parent="area2/houses" instance=ExtResource( 4 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7988, 0, 31.9036 )
+
+[node name="thouse11" parent="area2/houses" instance=ExtResource( 4 )]
+
+transform/local = Transform( 0.250034, 0, 0.968237, 0, 1, 0, -0.968237, 0, 0.250034, -70.2932, 0, 19.039 )
+
+[node name="thouse12" parent="area2/houses" instance=ExtResource( 4 )]
+
+transform/local = Transform( -0.958792, 0, 0.284111, 0, 1, 0, -0.284111, 0, -0.958792, -86.8565, 0, 17.8469 )
+
+[node name="terrain" type="Spatial" parent="area2"]
+
+editor/display_folded = true
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="terrain1" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5533, 0, 44.3916 )
+
+[node name="terrain2" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7028, 0, 21.4188 )
+
+[node name="terrain3" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( -0.999908, 0, 0.0135889, 0, 1, 0, -0.0135889, 0, -0.999908, -33.6934, 0, 8.13076 )
+
+[node name="terrain4" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -57.1522, 0, 12.0827 )
+
+[node name="terrain5" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.969854, 0, -0.243687, 0, 1, 0, 0.243687, 0, 0.969854, -73.6567, 0, 10.5735 )
+
+[node name="terrain6" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.969854, 0, -0.243687, 0, 1, 0, 0.243687, 0, 0.969854, -85.5508, 0, 39.7395 )
+
+[node name="terrain7" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.969854, 0, -0.243687, 0, 1, 0, 0.243687, 0, 0.969854, -85.5508, 0, 51.7486 )
+
+[node name="terrain8" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.969854, 0, -0.243687, 0, 1, 0, 0.243687, 0, 0.969854, -85.5508, 0, 72.9405 )
+
+[node name="terrain9" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.999595, 0, -0.0284534, 0, 1, 0, 0.0284534, 0, 0.999595, -68.7585, 0, 72.9405 )
+
+[node name="terrain10" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.999595, 0, -0.0284534, 0, 1, 0, 0.0284534, 0, 0.999595, -50.0861, 0, 72.9405 )
+
+[node name="terrain11" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.999595, 0, -0.0284534, 0, 1, 0, 0.0284534, 0, 0.999595, -31.1803, 0, 72.9405 )
+
+[node name="terrain12" parent="area2/terrain" instance=ExtResource( 2 )]
+
+transform/local = Transform( 0.999595, 0, -0.0284534, 0, 1, 0, 0.0284534, 0, 0.999595, -17.1569, 0, 64.3963 )
+
+
